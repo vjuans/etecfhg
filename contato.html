@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+        <link rel = "icon" type = "image/jpg" href = "img/logo2.png">
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+        <title>Fale Conosco!</title>
+   </head>
+   <body>
+      <!--Formulario-->
+      <script>
+         function entrar() {
+           window.open("home.html", "_self")
+         }
+         
+         function enviar() {
+         
+           var nome = document.getElementById("nome").value;
+           var email = document.getElementById("email").value;
+           var tel = document.getElementById("tel").value;
+         
+           if (nome === "" || email === "" || tel ==="" ) {
+             alert("Preencha os campos em branco!");
+           }
+           else {
+             alert("Mensagem enviada com sucesso!");
+           }
+         }
+      </script>
+      <!--container-->
+    <div class="container">
+        <nav class="nav1">
+             <div class="logo">
+                <a href="home.html"><img class="logo3" src="img/logo3.png"></a>
+            </div>
+            <ul>
+                <li><a class="a2" href="home.html">Home</a></li>
+                <li><a class="a2" href="sobre.html">Sobre</a></li>
+                <li class="dropdown"><a class="a2" href="#">Cursos</a>
+                    <div class="dropdown-content">
+                        <a class="adrop" href="adm.html">Administração</a>
+                        <a class="adrop" href="chs.html">Ciências Humanas</a>
+                        <a class="adrop" href="ds.html">Desenvolvimento de Sistemas</a>
+                        <a class="adrop" href="mkt.html">Marketing</a>
+                        <a class="adrop" href="qua.html">Qualidade</a>
+                        <a class="adrop" href="rh.html">Recursos Humanos</a>
+                        <a class="adrop" href="st.html">Segurança do Trabalho</a>
+                    </div>
+                </li>
+                <li><a class="a2" href="galeria.html">Galeria</a></li>
+                <li><a class="btn" href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div class="header">
+            <p>Contato</p>
+            <h1>Envie seu feedback</h1>
+        </div>
+      <!--Formulário-->
+      <div class="formcont">
+      <div id="div-form">
+         <form >
+            <p class="txtf">Seus Dados</p>
+            <div>
+               <label for="nome" class="formtxt">Digite seu Nome</label>
+               <input type="text" class="form-control" id="nome" name="nome" value="" required>
+            </div>
+            <div>
+               <label for="email" class="formtxt">Digite seu E-mail</label>
+               <input type="text" class="form-control" id="email" name="email" value="" required>
+            </div>
+            <div>
+               <label for="tel" class="formtxt">Digite seu Telefone</label>
+               <input type="text" class="form-control" id="tel" name="tel" value="" required>
+            </div>
+            <p class="txtf">Sua Mensagem</p>
+            <div>
+               <label for="tel" class="formtxt">Digite sua mensagem</label>
+               <textarea></textarea>
+            </div>
+            <div>
+               <button type="button" class="btnE" onclick="enviar()">Enviar</button>
+            </div>
+            <div>
+               <input type="reset" name="limpa" value="Limpar">
+            </div>
+         </form>
+      </div>
+      <!--Logo-->
+      <div class="dbanner">
+         <img class="banner" src= "img/logo.png">
+      </div>
+      <img class="lcp" src="img/lc.jpg">
+      <!--Rodapé-->
+      <footer>
+        <p>Etec Ferrucio Humberto Gazzetta - 2024</p><br>
+         <p>Marco Silva & Vinícius Silvério 2024 - &copyTodos os direitos reservados </p>
+         <p>Trabalho acadêmico - sem fins lucrativos</p>
+      </footer>
+   </body>
+</html>
